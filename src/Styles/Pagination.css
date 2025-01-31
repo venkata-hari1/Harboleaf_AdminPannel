@@ -1,0 +1,12 @@
+.pagination .page-item{
+    background:  #050a17 !important;
+}
+.page-link{
+    
+    color: #fff ;
+}
+#one{
+    color:#4200FF !important;
+    background-color: transparent;
+    border: 1px solid #4200ff !important;
+}
