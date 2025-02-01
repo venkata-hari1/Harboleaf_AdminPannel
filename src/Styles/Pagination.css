@@ -1,12 +1,18 @@
-.pagination .page-item{
-    background:  #050a17 !important;
-}
-.page-link{
-    
-    color: #fff ;
+.page-link {
+    width: 38px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px; 
+
+  }
+#lt1,#lt2{
+ background-color: #485562 !important;
+ border:#485562;
+ color: #C4CDD5;
+ 
 }
 #one{
-    color:#4200FF !important;
-    background-color: transparent;
-    border: 1px solid #4200ff !important;
+  color: #4200FF !important;
 }

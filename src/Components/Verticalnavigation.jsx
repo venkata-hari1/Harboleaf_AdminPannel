@@ -2,7 +2,20 @@ import React from 'react'
 import '../Styles/Verticalnavigation.css';
 import Harborleaf from '../assets/Harboleaf_logo.png';
 const Verticalnavigation = () => {
-  return (
+
+   const menudata=[
+  
+      "User Management",
+      "User Management Reports",
+      "GST User Management",
+      "GST User Reports",
+      "Emergency Management",
+      "AD Management",
+      "Edit profile"
+  ]
+
+     
+return (
     <div className='container mt-3' style={{
       display:"flex",
       alignItems:"center",
@@ -13,16 +26,20 @@ const Verticalnavigation = () => {
     <div>
       <p className='mt-4' style={{color:"#898989"}}>MENU</p>  
       <ul>
-        <li><i className="icons bi bi-people-fill"></i><a className="ms-2"href='#'>User Management</a></li>
-        <li><i className="icons bi bi-people-fill"></i><a className="ms-2" href='#'>User Management Reports</a></li>
-        <li><i className="icons bi bi-briefcase-fill"></i> <a className="ms-2" href='#'>GST User Management</a></li>
-        <li><i className="icons bi bi-briefcase-fill"></i><a className="ms-2" href='#'>GST User Reports</a></li>
-        <li><i className="icons bi bi-shield-fill-check" style={{color:"#FF0000"}}></i><a className="ms-2" href='#' >Emergency Management</a></li>
-         <div >      
-        <li><i className="icons bi bi-badge-ad-fill" ></i><a className="ms-2" href='#'>AD Management</a></li> 
-        </div>
-
-         <li><i className="icons bi bi-person-circle"></i><a className="ms-2" href='#'>Edit Profile</a></li>
+      {
+        menudata.map( (menu,index) =>(
+          <li key="index">
+          {menu === "User Management" && <i className="icons bi bi-people-fill"></i>}
+          {menu === "User Management Reports" && <i className="icons bi bi-people-fill"></i>}
+          {menu === "GST User Management" && <i className="icons bi bi-briefcase-fill"></i>}
+          {menu === "GST User Reports" && <i className="icons bi bi-briefcase-fill"></i>}
+          {menu === "Emergency Management" && <i className="icons bi bi-shield-fill-check" style={{color:"#FF0000"}}></i>}
+          {menu === "AD Management" && <i className="icons bi bi-badge-ad-fill" ></i>}
+          {menu === "Edit profile" && <i className="icons bi bi-person-circle"></i>}
+         <a className="ms-2">{menu}</a>
+          </li>
+          ))
+      }  
       </ul>   
     </div>
       
