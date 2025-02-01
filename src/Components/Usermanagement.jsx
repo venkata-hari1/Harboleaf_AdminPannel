@@ -83,8 +83,6 @@ return (
 </tbody>
   </table>
   <Pagination />
- 
-     
   </div>
   )
 }
