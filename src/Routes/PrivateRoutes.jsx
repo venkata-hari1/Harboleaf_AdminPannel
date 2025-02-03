@@ -9,7 +9,9 @@ import Monitercompaign from '../Components/Monitercompaign'
 import Verticalnavigation from '../Components/Verticalnavigation'
 import Gstreportsmanagement from '../Components/Gstreportsmanagement'
 import Userreports from '../Components/Userreports'
+
 import './PrivateRoutes.css'
+
 const PrivateRoutes = () => {
     return (
         <div className='grid-container'>
@@ -27,6 +29,7 @@ const PrivateRoutes = () => {
                     <Route path='emergency' element={<Emergencymanagement />} />
                     <Route path='moniter-compaign' element={<Monitercompaign />} />
                     <Route path='vertical' element={<Verticalnavigation />} />
+                   
                 </Routes>
             </div>
         </div>

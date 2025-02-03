@@ -1,0 +1,29 @@
+
+.wrapper1{
+  width: 100%;
+  display: flex;
+ 
+}
+
+.logo-name{
+  width: 50%;
+  margin-top: 30px;
+  
+}
+p{
+
+    font-weight: 600;
+    size: 29px;
+    line-height: 33.62px;
+    color: #FFFFFF;
+    padding-left: 30px;
+    font-family: "Roboto";
+}
+
+.search{
+    width: 50%;
+    display: flex;
+    padding-right: 15px;
+    gap: 16px;
+    justify-content: end;
+}
