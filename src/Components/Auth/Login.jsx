@@ -34,9 +34,9 @@ const navigate=useNavigate()
               <div className="mb-3 text-end">
               <span className="forget-password" onClick={handleForgetPassword}>Forgot password?</span>
               </div>
-              <button type="submit" className="btn btn-primary w-100" onClick={handleSignIn}>Sign In</button>
+              <button type="submit" className="signin btn btn-primary w-100" onClick={handleSignIn}>Sign In</button>
               <div className="mb-3 text-center text-white mt-3">
-                <p className="noaccount">Dont have an account? <a href="#">Sign up</a></p>
+                <p className="noaccount" type="btn" >Dont have an account? <a href="#">Sign up</a></p>
               </div>
             </form>
           </div>

@@ -2,7 +2,9 @@ import React from 'react';
 import '../Styles/Verticalnavigation.css';
 import Harborleaf from '../assets/Harboleaf_logo.png';
 import { useNavigate } from 'react-router-dom';
+import Adiminpic from '../assets/Adminpic.jpg';
 const Verticalnavigation = () => {
+ 
   const navigate=useNavigate()
   const menudata = [
     { id: 1, menu: "User Management", icon: "bi-people-fill", route: "user-management", locationRoute: "/admin/user-management" },
@@ -17,12 +19,12 @@ const handleClick=(menu)=>{
   navigate(`/admin/${menu.route}`)
 }
   return (
-    <div className='container mt-3' style={{ display: "flex", alignItems: "center", flexDirection: "column" }}>
-      <div className='logo'>
-        <img src={Harborleaf} width="225px" height="55px" alt="Logo" />
+    <div className='container' style={{ display: "flex", alignItems: "center", height:"100vh", flexDirection: "column", borderRight:"1px solid #323232", background:"linear-gradient(to bottom,'#111219','#323232')"}} >
+      <div className='logo mt-4'>
+        <img src={Harborleaf} width="200px" height="40px" alt="Logo" />
       </div>
       <div>
-        <p className='mt-4' style={{ color: "#898989" }}>MENU</p>
+        <p className="mt-4 ms-4"style={{ color: "#898989" }}>MENU</p>
         <ul>
           {menudata.map((menu) => (
             <li key={menu.id} style={{cursor:'pointer'}} onClick={()=>handleClick(menu)}>
@@ -35,20 +37,20 @@ const handleClick=(menu)=>{
 
       <div className="adminbutton d-flex align-items-center p-3 rounded shadow mt-5">
         <button className="btn p-0">
-          <img src="http://www.w3.org/2000/svg" className="rounded-circle" width="45px" height="45px" alt="Admin" />
+          <img src={Adiminpic} className="rounded-circle" width="40px" height="40px" alt="Admin" />
         </button>
 
         <div className="ms-3" style={{ background: "#29292C" }}>
-          <h6 className="mb-0 fw-bold" style={{ color: "#FFFFFF" }}>John Doe</h6>
-          <small className="text-white" style={{ color: "#898989" }}>Admin</small>
+          <h6 className="mb-0 fw-bold" style={{ color:"#FFFFFF", background:"#29292C",fontSize:"15px",fontFamily:"Roboto"  }}>Sourav Singh</h6>
+          <small className="text-white" style={{ color: "#898989",background:"#29292C",fontFamily:"Roboto" }}>Admin</small>
         </div>
 
         <div className="ms-auto d-flex align-items-center" style={{ background: "#29292C" }}>
           <button style={{ background: "#29292C", border: "none", color: "white" }}>
-            <i className="bi bi-bell-fill me-2"></i>
+            <i className="bi bi-bell-fill me-1"></i>
           </button>
           <button style={{ background: "#29292C", border: "none", color: "white" }}>
-            <i className="bi bi-envelope-fill ms-2"></i>
+            <i className="bi bi-envelope-fill ms-1  "></i>
           </button>
         </div>
       </div>

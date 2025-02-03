@@ -2,9 +2,9 @@ import React from 'react'
 import '../Styles/Pagination.css';
 const Pagination = () => {
   return (
-    <div className='position-fixed bottom-0 start-0 end-0 d-flex justify-content-center'>
+    <div className='position-fixed bottom-0 start-0 end-0 d-flex justify-content-center' >
      <nav aria-label="Page navigation">
-  <ul class="pagination d-flex justify-content-center ">
+  <ul class="pagination d-flex justify-content-center">
     <li class="page-item me-2">
       <a class="page-link" id="lt1" href="#" aria-label="Previous" style={{backgroundColor: "#C4CDD5" ,display:"flex", justifyContent:"center", alignItems:"center"}}>
         <span id="lt2"aria-hidden="true">&lt;</span>
