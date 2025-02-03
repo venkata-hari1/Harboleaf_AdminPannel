@@ -16,7 +16,7 @@ const PrivateRoutes = () => {
             <div className='sidebar'>
                 <Verticalnavigation />
             </div>
-            <div>
+            <div style={{padding:'10px',position:'relative'}}>
                 <Routes>
                     <Route path='user-management' element={<Usermanagement />} />
                     <Route path='user-reports' element={<Userreports />} />

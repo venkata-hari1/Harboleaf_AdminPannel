@@ -8,7 +8,7 @@ ul li a{
     text-decoration: none;
     color: #898989;
     font-family: "roboto";
-    line-height: 40px;
+    line-height: 50px !important;
     font-size: 14px;
 }
 

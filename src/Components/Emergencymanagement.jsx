@@ -74,9 +74,9 @@ const Emergencymanagement = () => {
   }
 </tbody>
   </table>
+  <div>
   <Pagination />
- 
-     
+  </div>    
   </div>
   )
 }

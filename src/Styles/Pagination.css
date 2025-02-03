@@ -1,6 +1,5 @@
 .page-link {
-    width: 45px;
-    height: 45px;
+    height:30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,12 +7,7 @@
     color: #FFFFFF;
 
   }
-#lt1,#lt2{
- background-color: #485562 !important;
- border:#485562;
- color: #C4CDD5;
- 
-}
+
 #one{
   color: #4200FF !important;
 }

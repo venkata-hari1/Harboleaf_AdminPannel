@@ -25,7 +25,7 @@ const handleClick=(menu)=>{
       </div>
       <div>
         <p className="mt-4 ms-4"style={{ color: "#898989" }}>MENU</p>
-        <ul>
+        <ul >
           {menudata.map((menu) => (
             <li key={menu.id} style={{cursor:'pointer'}} onClick={()=>handleClick(menu)}>
               <i className={`icons bi ${menu.icon}`} style={menu.color ? { color: menu.color } : {}}></i>
