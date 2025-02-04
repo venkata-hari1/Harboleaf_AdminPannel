@@ -62,8 +62,24 @@ const Emergencymanagement = () => {
      tabledata.map((tdata,index)=>(
       <tr key={tdata.id}>
       <th>{tdata.id}</th>
-      <td><img src="http://www.w3.org/2000/svg" class="rounded-circle" />{tdata.utiliseduser}</td>
-      <td><img src="http://www.w3.org/2000/svg" class="rounded-circle" />{tdata.rescuseduser}</td> 
+      <td> <img
+            src={`https://robohash.org/${tdata.utiliseduser}?size=40x40`}
+            alt="avatar"
+            className="rounded-circle me-2"
+            width="30"
+            height="30"
+            style={{objectFit:"cover",border:'1px solid white',marginBottom:'2px'}}
+          />{tdata.utiliseduser}</td>
+      <td>
+      <img
+            src={`https://robohash.org/${tdata.rescuseduser}?size=40x40`}
+            alt="avatar"
+            className="rounded-circle me-2"
+            width="30"
+            height="30"
+            style={{objectFit:"cover",border:'1px solid white',marginBottom:'2px'}}
+          />
+        {tdata.rescuseduser}</td> 
       <td>{tdata.state}</td>
       <td>{tdata.area}</td> 
       <td>{tdata.date}</td>    

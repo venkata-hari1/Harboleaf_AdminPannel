@@ -74,7 +74,16 @@ const Userreports = () => {
      tabledata.map((tdata)=>(
       <tr key={tdata.id}>
       <th>{tdata.id}</th>
-      <td><img src="http://www.w3.org/2000/svg" class="rounded-circle" /> {tdata.username}</td>
+      <td>
+      <img
+            src={`https://robohash.org/${tdata.username}?size=40x40`}
+            alt="avatar"
+            className="rounded-circle me-2"
+            width="30"
+            height="30"
+            style={{objectFit:"cover",border:'1px solid white',marginBottom:'2px'}}
+          />
+        {tdata.username}</td>
       <td>{tdata.state}</td> 
       <td>{tdata.contact}</td>
       <td>{tdata.userreported}</td>
