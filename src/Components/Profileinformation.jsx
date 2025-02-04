@@ -5,7 +5,7 @@ import Postdata from './Postdata'
 
 const Profileinformation = () => {
   return (
-    <div className='container' style={{display:"flex", flexDirection:"column"}} >
+    <div className='container' style={{display:"flex", flexDirection:"column",}} >
         <Profiledata />
         <Socialdata />
         <Postdata />

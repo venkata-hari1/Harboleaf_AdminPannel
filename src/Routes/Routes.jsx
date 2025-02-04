@@ -7,6 +7,7 @@ import Otp from '../Components/Auth/OTP'
 import Profiledata from '../Components/Profiledata'
 import Socialdata from '../Components/Socialdata'
 import Postdata from '../Components/Postdata'
+import Profileinformation from '../Components/Profileinformation'
 const AppRoutes = () => {
   return (
     <Routes> 
@@ -17,8 +18,9 @@ const AppRoutes = () => {
       <Route path='/profile' element={<Profiledata />}/> 
       <Route path='/social' element={<Socialdata />}/> 
       <Route path='/post' element={<Postdata />}/> 
-   
-
+      <Route path='/profileinfo' element={<Profileinformation />}/> 
+      
+ 
     </Routes>
   )
 

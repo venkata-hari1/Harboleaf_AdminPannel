@@ -1,4 +1,5 @@
 import React from 'react'
+import { data } from 'react-router-dom'
 
 const Socialdata = () => {
 
@@ -13,24 +14,26 @@ const Socialdata = () => {
     ]
 
   return (
-   <div className='container' style={{display:"flex"}}>
-       <div style={{display:"flex",flexDirection:"column",paddingRight:"100px"}}>
-       <p style={{display:"flex",fontFamily:"Roboto"}}>Social Media Information</p>
-       {
-          socialdata.map(data=>(
-           
-            <ul key={data.id} style={{display:"flex",color:"#ffff",fontFamily:"Roboto"}}>
-              
-              <li>{data.key}</li>
-              <li className='ms-5'>{data.value}</li>
-            </ul>
-           
-          )) 
-       } 
+   <div className='container'>
+    <div className='wrapper' style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
+    <div style={{display:"flex",fontFamily:"roboto",color:"#fff",}}>
+      <p>Socila media Information</p>
+    </div>
+    
+      {
+         socialdata.map( data=>(
+          <div style={{display:"grid", gridTemplateColumns:"15% 85%",fontFamily:"roboto", }}>
+          <p style={{color:"#B9B9B9"}}>{data.key}</p>
+          <p style={{color:"#FFFFFF"}}>{data.value}</p>
+          </div>
+         ))
 
 
-       </div>
-  
+      }
+    
+
+    </div>
+
    </div>
   )
 }
