@@ -1,5 +1,6 @@
 import React from 'react'
 import Rectangle from '../assets/Rectangle.png';
+import { data } from 'react-router-dom';
 const Profiledata = () => {
 
   const profiledata=[
@@ -12,46 +13,34 @@ const Profiledata = () => {
   ]
 
 return (
-    <div className='profile-container mt-5' style={{width:"100%"}}>
-      <div style={{display:"flex",
-        width:"100%",
-        backgroundColor:"#60606017",
-        height:"417px",
-        borderRadius:"25px", 
-        Top:"10px"}}>  
-      <div className='profile-photo' style={{display:"flex", width:"20%",}}>
-        <img src={Rectangle}  width="174px" height="213px" style={{marginLeft:"46px",}} />
-      </div>
-      <div className='profile-data' style={{display:"flex", width:"60%",flexDirection:"column"}}>
-        <div style={{display:"flex"}}>
-        <p style={{display:"flex"}}>Suresh Kumar</p><br/>
-        </div><br/>
+     <div className='container' style={{display:"flex", justifyContent:"space-between"}}>
+     <div style={{display:"flex"}}>
+      <img src={Rectangle}  width="174px" height="213px" style={{marginTop:"30px"}}/>
+     </div>
+      
+      <div style={{display:'flex',flexDirection:"column",marginTop:"30px"}}>
+        <p style={{display:"flex",paddingRight:"500px",fontFamily:"Roboto"}}>Suresh Kumar</p>
+        {
+          profiledata.map(data=>(
+           
+            <ul key={data.id} style={{display:"flex",color:"#ffff",fontFamily:"Roboto"}}>
               
-         <div style={{display:"flex",flexDirection:"column"}}>
-           {
-             profiledata.map((data)=>(
+              <li>{data.key}</li>
+              <li className='ms-5'>{data.value}</li>
+            </ul>
+           
+          )) 
+       } 
+     </div>
+     
+     <div style={{display:"flex"}}> 
+     <button className='btn' style={{color:"#FF0000",border:"1px solid #3856F3",color:"#fff",fontFamily:"Roboto",height:"40px", marginTop:"30px"}}>Download Report<i className="bi bi-download "></i></button>
+     </div>
 
-               <div style={{display:"flex",
-                 fontFamily:"roboto",
-               }}>
-                <ul key={data.id} style={{display:"flex",justifyContent:"space-between",color:"#ffff"}}>
-                   <li className="me-5" style={{display:"flex",fontWeight:"400"}}>{data.key}</li>
-                   <li   style={{display:"flex",justifyContent:"space-between !important"}}>{data.value}</li>
-                </ul>
-               </div> 
-
-
-             ) )
-
-           }
-        </div>
-      </div>
-      <div style={{display:"flex",width:"20%"}}>
-      <button className='btn' style={{color:"#FF0000",border:"1px solid #3856F3",color:"#fff",fontFamily:"Roboto",height:"40px"}}>Download Report<i className="bi bi-download ms-2"></i></button>
-      </div>
-      </div>
-    </div>
+     
+     </div>
   )
 }
 
 export default Profiledata
+

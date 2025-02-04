@@ -2,17 +2,14 @@
 .wrapper1{
   width: 100%;
   display: flex;
- 
-}
+ }
 
 .logo-name{
   width: 50%;
   margin-top: 30px;
-  
-}
+  }
 p{
-
-    font-weight: 600;
+  font-weight: 600;
     size: 29px;
     line-height: 33.62px;
     color: #FFFFFF;

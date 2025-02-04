@@ -13,31 +13,25 @@ const Socialdata = () => {
     ]
 
   return (
-    <div style={{width:"100%", display:"flex",flexDirection:"column"}}>
-    
-    <div style={{width:"100%", display:"flex", flexDirection:"column",borderRadius:"25px",height:"260px"}}>
-        
-        <div style={{display:"flex" }}>
-           <p>Social media Information</p> 
-        </div>
-        
-        <div style={{display:"flex", flexDirection:"column",color:"#ffff",fontFamily:"roboto",justifyContent:"space-between" }}>
-            {
-             socialdata.map( (data)=>(
-             <ul key={data.id} style={{display:"flex",justifyContent:"start"}}>
-                
-                <li>{data.key}</li>
-                <div style={{display:"flex"}}> <li className="ms-2" style={{display:"flex",justifyContent:"space-between"}}>{data.value}</li></div>
-            </ul>  
-                
-            ))
-         }
-    </div>
+   <div className='container' style={{display:"flex"}}>
+       <div style={{display:"flex",flexDirection:"column",paddingRight:"100px"}}>
+       <p style={{display:"flex",fontFamily:"Roboto"}}>Social Media Information</p>
+       {
+          socialdata.map(data=>(
+           
+            <ul key={data.id} style={{display:"flex",color:"#ffff",fontFamily:"Roboto"}}>
+              
+              <li>{data.key}</li>
+              <li className='ms-5'>{data.value}</li>
+            </ul>
+           
+          )) 
+       } 
 
-    </div>
-      
 
-    </div>
+       </div>
+  
+   </div>
   )
 }
 
