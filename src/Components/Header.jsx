@@ -14,7 +14,7 @@ const Header = () => {
       name = "User Management Reports";
       break;
     case "/admin/gst-users":
-      name = "GST User Management";
+      name = "GST User Management"
       break;
     case "/admin/gst-reports":
       name = "GST User Reports";
