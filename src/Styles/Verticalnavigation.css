@@ -26,4 +26,14 @@ ul li .icons{
 small{
     color: antiquewhite;
 }
-
+.sidebar-container{
+    z-index:900;
+    width:20%;
+    position: fixed;
+    display: flex; 
+    align-items:center;
+    height:100vh;
+    flex-direction:column;
+    border-right:1px solid #323232;
+    background:"linear-gradient(to bottom,'#111219','#323232')"
+}

@@ -19,7 +19,7 @@ const handleClick=(menu)=>{
   navigate(`/admin/${menu.route}`)
 }
   return (
-    <div className='container' style={{ display: "flex", alignItems: "center", height:"100vh", flexDirection: "column", borderRight:"1px solid #323232", background:"linear-gradient(to bottom,'#111219','#323232')"}} >
+    <div className="sidebar-container">
       <div className='logo mt-4'>
         <img src={Harborleaf} width="200px" height="40px" alt="Logo" />
       </div>

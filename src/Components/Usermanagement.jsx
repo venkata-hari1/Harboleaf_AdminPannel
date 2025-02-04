@@ -2,9 +2,13 @@ import React from 'react'
 import "../Styles/Usermanagement.css";
 import  Pagination  from './Pagination';
 import '../Styles/Pagination.css';
+import { useNavigate } from 'react-router-dom';
 
 const Usermanagement = () => {
-
+const navigate=useNavigate()
+const userInfo=(id)=>{
+  navigate(`profile-info/${id}`)
+}
   const tabledata=[
     {
       id:1,
@@ -67,7 +71,7 @@ return (
      tabledata.map((tdata,index)=>(
       <tr key={tdata.id}>
       <th>{tdata.id}</th>
-      <td>
+      <td onClick={()=>userInfo(tdata.id)}>
       <img
             src={`https://robohash.org/${tdata.username}?size=40x40`}
             alt="avatar"
@@ -76,7 +80,8 @@ return (
             height="30"
             style={{objectFit:"cover",border:'1px solid white',marginBottom:'2px'}}
           />
-        {tdata.username}</td>
+        {tdata.username}
+        </td>
       <td>{tdata.accountstatus}</td> 
       <td>{tdata.contact}</td>
       <td>{tdata.date}</td>
