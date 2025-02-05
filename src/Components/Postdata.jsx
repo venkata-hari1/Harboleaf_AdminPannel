@@ -16,7 +16,7 @@ const Postdata = () => {
     ]
 
     return (
-    <div className='container'>
+    <div className='postbox-container'>
      <div className="post-container">
       <div className="post-data mt-3">
           {
