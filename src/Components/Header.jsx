@@ -32,43 +32,33 @@ const Header = () => {
       name = "Dashboard";
   }
   return (
-    <div className="header-wrapper" 
-    style={{display:"flex",height:"110px",width:"100%",background:"#4fabc2"}}>
-     
-     <div style={{
-       width:"100%",
-       height:"100%",
-       background:"#357fb0",
-       display:"flex",
-       fontFamily:"roboto",
-       color:"#ffff",
-       fontWeight:600,
-       
+    <div>
+     <div className='header-container'>
+       <div className='header-title'>
+           <p>{name}</p> 
+        </div>
+        <div className='search-notify'>
+        <div className='header-serach'>
+        <button id="header-button"><i className="bi bi-search"></i> Search</button>
+        </div>
 
-       
-      }}>
-       <p style={{background:"#357fb0",marginTop:"30px", marginLeft:"30px"}}>{name}</p>
+        <div className='header-notify'>
+          <button id="notify-button" ><i className="bi bi-bell-fill "></i></button>
+        </div>
+
+        </div>
+
+
      </div>
 
-     <div style={{ background:"#357fb0",display:"flex",justifyContent:"end"}}>
-     <button className="btn me-2" 
-     style={{ width: "420px", height: "54px",background:"#00000080", border: '1px solid  #585858a3', color: '#FFFFFF', display: 'flex', justifyContent: 'start', alignItems: 'center', marginTop: "20px" }}><i className="bi bi-search me-2"></i> Search</button>
+     <div className='total'>
+      <p id="total1">Total Users</p>
+      <p id="total2">40,300</p>
+      <p id="total3"><i className="bi bi-arrow-up-right "  style={{ background:"#26666333",color: "#4AD991" }}></i><span style={{ background:"#26666333",color: "#4AD991" }}>4.8</span>from yesterday</p>
      </div>
-    <div style={{background:"#357fb0",display:"flex"}}>
-    <div style={{background:"#357fb0",  display: "flex", justifyContent:"center",paddingRight:"20px"}}>
-            <button className='btn me-3' style={{ background:"#00000080",display: "flex",width:"50px", height:"54px",color: '#ffff', justifyContent: "center", alignItems: 'center',marginTop:"20px",marginRight:"20px"}}><i className="bi bi-bell-fill "></i></button>
-     </div>
-    </div>
-     
-    <div style={{ display:"flex",background:"#0c1320",flexDirection:"column",justifyContent:"start",alignItems:"start",color:"#ffff",borderRadius:"20px", width: "170px", height: "135px", top: "88px", fontFamily: "roboto",  marginLeft: "30px", padding:"15px",position: "absolute" }}>
-        <p style={{fontSize:"14px",background:"#0c1320"}}>Total Users</p>
-        <p style={{ fontSize: "22px",background:"#0c1320" }}>40,300</p>
-        <p style={{ fontSize: "13px",fontWeight: "400",background:"#0c1320" }}><i className="bi bi-arrow-up-right" style={{ height: "5px", width: "5px", color: "#4AD991",background:"#26666333" }}></i><span style={{ background:"#26666333",color: "#4AD991" }}>4.8</span>  from Yesterday</p>
-      </div>
 
-     
+   </div>   
 
-</div>
   )
 }
 

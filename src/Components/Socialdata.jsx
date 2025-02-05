@@ -1,6 +1,6 @@
 import React from 'react'
 import { data } from 'react-router-dom'
-
+import '../Styles/Socialdata.css';
 const Socialdata = () => {
 
     const socialdata=[
@@ -14,22 +14,21 @@ const Socialdata = () => {
     ]
 
   return (
-   <div className='container'>
-    <div className='wrapper' style={{display:"flex", flexDirection:"column", justifyContent:"space-between"}}>
-    <div style={{display:"flex",fontFamily:"roboto",color:"#fff",}}>
-      <p>Socila media Information</p>
-    </div>
+   <div className='social-container'>
+    <div className='social-wrapper'>
+     <div className="social-title-box">
+      <p className='social-title'>Social media Information</p>
+     </div>
     
       {
          socialdata.map( data=>(
-          <div style={{display:"grid", gridTemplateColumns:"15% 85%",fontFamily:"roboto", }}>
+          <div className="social-data1">
           <p style={{color:"#B9B9B9"}}>{data.key}</p>
           <p style={{color:"#FFFFFF"}}>{data.value}</p>
+
           </div>
          ))
-
-
-      }
+}
     
 
     </div>

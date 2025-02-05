@@ -1,7 +1,9 @@
 import React from 'react'
+import '../Styles/Postdata.css';
 import post1 from '../assets/post1.png';
 import post2 from '../assets/post2.jpg';
 import post3 from '../assets/post3.jpg';
+
 const Postdata = () => {
   
     const pvtdata=[
@@ -15,8 +17,8 @@ const Postdata = () => {
 
     return (
     <div className='container'>
-     <div style={{display:"flex",flexDirection:"column",background:"#60606017"}}>
-      <div className="mt-3" style={{display:"flex",color:"#ffff",fontFamily:"roboto",fontWeight:"400"}}>
+     <div className="post-container">
+      <div className="post-data mt-3">
           {
             pvtdata.map(data=>(
              <ul key={data.id}>
@@ -29,33 +31,18 @@ const Postdata = () => {
 
 
         
-       <div style={{width:"100%",display:"flex"}}>
+       <div className="post-images-grid" >
        
-         <div style={{width:"33.33%"}}>
-            <img src={post1} width="287px" height="495px" style={{
-                borderBottomRightRadius:"30px",
-                borderBottomLeftRadius:"30px",
-                borderTopRightRadius:"30px",
-                borderTopLeftRadius:"30px"
-               }}/>
+         <div className="post-image">
+            <img src={post1} width="287px" height="495px" />
             
           </div>
-          <div style={{width:"33.33%"}}>
+          <div className="post-image">
           
-          <img src={post2} width="287px" height="495px" style={{
-                borderBottomRightRadius:"30px",
-                borderBottomLeftRadius:"30px",
-                borderTopRightRadius:"30px",
-                borderTopLeftRadius:"30px"
-               }}/>
+          <img src={post2} width="287px" height="495px" />
           </div>
-          <div style={{width:"33.33%"}}>
-          <img src={post3} width="287px" height="495px" style={{
-                borderBottomRightRadius:"30px",
-                borderBottomLeftRadius:"30px",
-                borderTopRightRadius:"30px",
-                borderTopLeftRadius:"30px"
-               }}/>
+          <div  className="post-image" >
+          <img src={post3} width="287px" height="495px" />
           </div>
          
        </div>

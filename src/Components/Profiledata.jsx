@@ -1,6 +1,7 @@
 import React from 'react'
 import Rectangle from '../assets/Rectangle.png';
 import { data } from 'react-router-dom';
+import '../Styles/Profiledata.css';
 const Profiledata = () => {
 
   const profiledata=[
@@ -13,28 +14,28 @@ const Profiledata = () => {
   ]
 
 return (
-<div className='container' >
-    <div style={{display:"flex", justifyContent:"space-between"}}>
-     <div style={{display:"flex",}}>
-      <img src={Rectangle}  width="174px" height="213px" style={{marginTop:"30px"}}/>
+<div className='container-box'>
+    <div className="profile-container" >
+     <div className="profile-image-box">
+      <img className="profile-image"src={Rectangle} width="174px" height="213px" />
      </div>
       
-      <div style={{display:'flex',flexDirection:"column",marginTop:"30px",}}>
-        <p style={{display:"flex",paddingRight:"500px",fontFamily:"Roboto",color:"#fff",}}>Suresh Kumar</p>
+      <div className="profile-title-box">
+        <p className="profile-title">Suresh Kumar</p>
         {
           profiledata.map(data=>(
            
-             <div style={{display:"grid",gridTemplateColumns:"50% 50%",color:"#fff",fontFamily:"roboto"}}> 
-              <p style={{fontSize:"15px",color:"#B9B9B9"}}>{data.key}</p>
-              <p  style={{display:"flex",marginLeft:"-130px"}}>{data.value}</p>
+             <div className="profile-data" > 
+              <p className="data-key">{data.key}</p>
+              <p  className="data-value">{data.value}</p>
              </div>
 
           )) 
        } 
      </div>
      
-     <div style={{display:"flex",}}> 
-     <button className='btn' style={{color:"#FF0000",border:"1px solid #3856F3",color:"#fff",fontFamily:"Roboto",height:"40px", marginTop:"30px"}}>Download Report<i className="bi bi-download ms-2"></i></button>
+     <div className="download-report"> 
+     <button className='download-report-btn' >Download Report<i className="bi bi-download ms-2"></i></button>
      </div>
      </div>
 
