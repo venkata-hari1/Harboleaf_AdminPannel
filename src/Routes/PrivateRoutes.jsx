@@ -20,8 +20,9 @@ const PrivateRoutes = () => {
             <div className='sidebar'>
                 <Verticalnavigation />
             </div>
-            <div style={{padding:'10px',position:'relative'}}>
+            <div style={{position:'relative'}}>
                 <Header/>
+                <div style={{padding:'10px'}}>
                 <Routes>
                     <Route path='user-management' element={<Usermanagement />} />
                     <Route path='user-reports' element={<Userreports />} />
@@ -34,6 +35,7 @@ const PrivateRoutes = () => {
                     <Route path='vertical' element={<Verticalnavigation />} />
                     <Route path='user-management/profile-info/:id' element={<Profileinformation />} />          
                 </Routes>
+                </div>
             </div>
         </div>
     )

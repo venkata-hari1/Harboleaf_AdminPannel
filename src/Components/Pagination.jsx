@@ -3,7 +3,7 @@ import '../Styles/Pagination.css';
 const Pagination = () => {
   return (
     <div>
-    <div style={{position:'absolute',bottom:0,marginBottom:'20px',width:'90%'}}>
+    <div style={{position:'absolute',bottom:0,marginBottom:'8%',width:'90%'}}>
      <nav aria-label="Page navigation">
   <ul class="pagination pagination-sm d-flex justify-content-center">
     <li class="page-item me-2" style={{background:'#485562 !important'}}>

@@ -1,6 +1,9 @@
 .header-container{
-    width: 100%;
-    height:100px;
+    position: relative;
+    margin-top: -1%;
+    width:100%;
+    margin-left: -1%;
+    height:18vh;
     background-color:#4fabc2;
     display: flex;
     justify-content: space-between;
@@ -60,6 +63,7 @@
     margin-right: 20px;
 }
 .total{
+  position: absolute;
   display: flex;
   background-color: #0c1320;
   flex-direction: column;
@@ -67,13 +71,12 @@
   align-items: start;
   color: #fff;
   border-radius: 20px;
-  width: 150px;
-  height: 135px;
-  top: 68px;
+  width: 160px;
+  height: 120px;
+  top: 45px;
   font-family: "roboto";
-  margin-left: 30px;
+  margin-left: 25px;
   padding: 15px;
-  position: absolute;
 }
 
 .total p{

@@ -1,11 +1,9 @@
 import React from 'react'
 import '../Styles/Header.css';
 import { useLocation } from 'react-router-dom'
-import Header_bg from '../assets/Header_bg.png'
 const Header = () => {
   const location = useLocation()
   let name = "";
-
   switch (location.pathname) {
     case "/admin/user-management":
       name = "User Management";
@@ -51,11 +49,11 @@ const Header = () => {
 
      </div>
 
-     <div className='total'>
+     {location.pathname!=="/admin/user-management/profile-info/1"&&<div className='total'>
       <p id="total1">Total Users</p>
       <p id="total2">40,300</p>
       <p id="total3"><i className="bi bi-arrow-up-right "  style={{ background:"#26666333",color: "#4AD991" }}></i><span style={{ background:"#26666333",color: "#4AD991" }}>4.8</span>from yesterday</p>
-     </div>
+     </div>}
 
    </div>   
 
