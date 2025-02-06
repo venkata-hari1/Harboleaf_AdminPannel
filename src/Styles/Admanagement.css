@@ -1,0 +1,47 @@
+.admanagment{
+   height: 90vh;
+}
+.ad-container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.advertisement{
+    display: flex;
+    justify-content:space-between;
+    margin-top: 200px;
+    font-family: "roboto";
+    font-weight: 600;
+}
+.advertisement button{
+    border-radius: 1px ;
+    border: 1px solid #3856F3;
+    color: #fff;
+    padding:5px 15px;
+    font-family: "roboto";
+}
+.moniter-cmpg{
+    display: flex;
+    margin-top: 200px;
+    font-weight: 600;
+}
+.moniter-cmpg button{
+    border-radius: 1px ;
+    border: 1px solid #3856F3;
+    color: #fff;
+    padding:5px 15px;
+    font-family: "roboto";
+}
+.billing-invoice{
+    display: flex;
+    margin-top: 200px;
+    font-weight: 600;
+}
+.billing-invoice button{
+    
+    border-radius: 1px ;
+    border: 1px solid #3856F3;
+    color: #fff;
+    padding:5px 15px;
+    font-family: "roboto";
+}
