@@ -16,7 +16,7 @@
 }
 .header-title p{
     background-color: #4fabc2;
-    font-family: "roboto";
+    
     color: #fff;
     padding-left: 40px;
     padding-top: 30px;
@@ -74,7 +74,7 @@
   width: 160px;
   height: 120px;
   top: 45px;
-  font-family: "roboto";
+  
   margin-left: 25px;
   padding: 15px;
 }
@@ -82,7 +82,7 @@
 .total p{
     background-color: transparent;
     color: #D1D1D1;
-    font-family: "roboto";
+    
 }
 #total1{
   font-size: 14px;

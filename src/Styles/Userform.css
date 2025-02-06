@@ -1,7 +1,7 @@
 .form-container{
     display: flex;
     justify-content: space-between;
-    font-family: "roboto";
+    
     align-items: center;
 }
 

@@ -9,18 +9,18 @@
 .social-title-box{
  
     display: flex;
-    font-family: "roboto";
+    
     color: "#fff";
     
 }
 .social-title{
     color: #fff !important;
-    font-family: "roboto";
+    
     margin-top: 15px;
 }
 .social-data1{
     display: grid;
     grid-template-columns:15% 85% ;
     color: #fff;
-    font-family: "roboto";
+    
 }

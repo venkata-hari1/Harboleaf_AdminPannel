@@ -20,7 +20,7 @@
 .profile-title{
   display: flex;
   padding-right: 500px;
-  font-family: "roboto";
+  
   color: #fff !important;
 }
 .profile-data{
@@ -28,7 +28,7 @@
     display: grid;
     grid-template-columns:50% 50%;
     color: #fff;
-    font-family: "roboto";
+    
 }
 .data-key{
   font-size: "15px";
@@ -44,7 +44,7 @@
 .download-report-btn{
 color: #fff;
 border: 1px solid #3856F3;
-font-family: "roboto";
+
 height: 40px;
 margin-top: 30px;
 padding: 7px;
