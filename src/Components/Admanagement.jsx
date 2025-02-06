@@ -1,18 +1,20 @@
 import React from 'react'
 import '../Styles/Admanagement.css'
+import { useNavigate } from 'react-router-dom'
 const Admanagement = () => {
+  const navigate=useNavigate()
   return (
     <div className='admanagment'>
       <div className='ad-container'> 
 
       <div className='advertisement'>
-      <button>Create New Advertisement</button> 
+      <button onClick={()=>navigate('userform')}>Create New Advertisement</button> 
       </div>
       <div className='moniter-cmpg'>
-      <button>Moniter Campaign</button> 
+      <button onClick={()=>navigate('userform')}>Moniter Campaign</button> 
       </div>
       <div className='billing-invoice'>
-      <button>Billing and Invoice Details</button> 
+      <button onClick={()=>navigate('userform')}>Billing and Invoice Details</button> 
       </div>
       </div>
 
