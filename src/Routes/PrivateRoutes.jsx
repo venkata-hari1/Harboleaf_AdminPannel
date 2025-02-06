@@ -11,10 +11,10 @@ import Gstreportsmanagement from '../Components/Gstreportsmanagement'
 import Userreports from '../Components/Userreports'
 import Profileinformation from '../Components/Profileinformation'
 import Header from '../Components/Header'
+import Admanagement from '../Components/Admanagement'
+import Userform from '../Components/Userform'
 import './PrivateRoutes.css'
-
 const PrivateRoutes = () => {
-
     return (
         <div className='grid-container'>
             <div className='sidebar'>
@@ -33,7 +33,9 @@ const PrivateRoutes = () => {
                     <Route path='emergency' element={<Emergencymanagement />} />
                     <Route path='moniter-compaign' element={<Monitercompaign />} />
                     <Route path='vertical' element={<Verticalnavigation />} />
-                    <Route path='user-management/profile-info/:id' element={<Profileinformation />} />          
+                    <Route path='user-management/profile-info/:id' element={<Profileinformation />} /> 
+                    <Route path='admgmt' element={<Admanagement />} />
+                    <Route path='admgmt/userform' element={<Userform />} />         
                 </Routes>
                 </div>
             </div>
