@@ -17,7 +17,7 @@ const Pagination = () => {
     <li class="page-item me-2" style={{height:'20px !important'}}><a className="page-link" href="#" >9</a></li>
     <li class="page-item me-2" style={{height:'20px !important'}}><a className="page-link" href="#" >10</a></li>
     <li class="page-item me-2">
-      <a class="page-link" href="#" aria-label="Next" >
+      <a class="page-link" href="" aria-label="Next" >
         <span aria-hidden="true">&gt;</span>
       </a>
     </li>
