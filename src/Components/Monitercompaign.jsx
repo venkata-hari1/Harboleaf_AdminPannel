@@ -1,7 +1,7 @@
 import React from 'react'
 import Pagination from './Pagination'
 import { useNavigate } from 'react-router-dom'
-const Monitercompaign = () => {
+const Monitercompaign =() =>{
   const navigate=useNavigate()
   const handleAdd=()=>{
     navigate('/admin/admgmt')
