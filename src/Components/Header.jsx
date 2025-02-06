@@ -37,7 +37,7 @@ const Header = () => {
         </div>
         <div className='search-notify'>
         <div className='header-serach'>
-        <button id="header-button"><i className="bi bi-search"></i> Search</button>
+        <input type='search' placeholder='Search' id='header-input'/><i className="bi bi-search"></i> 
         </div>
 
         <div className='header-notify'>

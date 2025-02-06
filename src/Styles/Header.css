@@ -25,37 +25,15 @@
 .search-notify{
     display: flex;
     justify-content: end;
-    
 }
-.header-serach{
-  display: flex;
-  background-color: #4fabc2;
-  justify-content: end
-}
-#header-button{
-    width:400px;
-    height: 54px;
-    background-color:#398192 !important;
-    border: none;
-    border-radius: 12px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: start;
-    color: #fff;
-    padding-left: 12px;
-    padding-top: 13px;
-    gap: 9px;
-    margin-right: 10px;
-    
-   
-}
+
 .header-notify{
-    display: flex;
+ display: flex;
   background-color: #4fabc2 !important;
 }
 #notify-button{
     width:54px;
-    height: 54px;
+    height: 52px;
     background-color: #398192 !important;
     border: none;
     border-radius: 12px;
@@ -96,3 +74,48 @@
     font-size: 12px;
 }
 
+.header-serach{
+    display: flex;
+    background-color: #4fabc2;
+    justify-content: end;
+    cursor: pointer;
+    
+    
+    
+}
+#header-input{
+    width:400px;
+    height: 52px;
+    background-color:#398192 !important;
+    border: none;
+    border-radius: 12px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    color: #fff;
+     gap: 9px;
+    margin-right: 10px;
+    position: relative;
+    margin-left: 30px;
+}
+
+#header-input:focus{
+    outline: none;
+    padding-left: 10px;
+  }
+
+
+.bi-search{
+  position: absolute;
+  top: 35px;
+  padding-right: 384px;
+  color:#FFFFFF;
+}
+
+input[type="search"]::placeholder{
+
+padding-left: 35px !important;
+color: #FFFFFF;
+
+ 
+}

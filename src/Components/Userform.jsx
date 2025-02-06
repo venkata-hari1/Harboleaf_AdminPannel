@@ -34,14 +34,14 @@ const Userform = () => {
        
        <div className='target-check'>
         <input type='checkbox' />
-        <span>All over india</span>
+        <span className='ms-2'>All over india</span>
         </div>
         
         <div className='target-num'>
         <label>Target Age Range</label>
         <div>
-        <input type='number' /><span className='me-2 mt-2'>Age <span className='me-2 mt-2'>to</span></span>
-        <input type='number' /><span className='me-2 mt-2'> Age</span>  
+        <input type='number' id="num1"/><span className='ms-2 mt-2'>Age <span className='me-2 mt-2'>to</span></span>
+        <input type='number' id="num2" /><span className='ms-2 mt-2'> Age</span>  
         </div>
         </div>
 

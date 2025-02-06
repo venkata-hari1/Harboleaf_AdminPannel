@@ -6,10 +6,11 @@
 }
 
 .form-wrapper{
-    max-width: 600px;
+    max-width: 500px;
     padding: 20px;
     color: #fff;
     align-items: center;
+    margin-left: 50px;
 }
 .title-box{
   display:grid;
@@ -39,7 +40,11 @@ input[type="text"]{
     width: 500px;
     height: 40px;
     border-radius: 5px;
+    border: none;
+    border: 1px solid #898989;
 }
+
+
 .desc-box textarea{
     width: 500px;
     height: 140px;
@@ -55,6 +60,7 @@ input[type="text"]{
     height: 40px;
     border-radius: 5px;
     color: #fff;
+    padding-left: 10px;
 }
 .target-check{
     float: right;
@@ -65,6 +71,14 @@ input[type="text"]{
     display:grid;
     grid-template-columns: 50% 50%;
     margin-top: 50px;
+    border: none;
+    outline: none;
+}
+
+#num1,#num2{
+
+    border: none;
+    border: 1px solid #898989;
 }
 .target-num>div{
     display: flex;
@@ -95,7 +109,17 @@ input[type="number"]{
     height: 40px;
     margin-top: 30px;
     border-radius: 4px;
+    border: none;
+    border: 1px solid #898989;
 }
+.budget-box input::placeholder{
+  padding-left: 5px;
+}
+.elimination-box input::placeholder{
+    padding-left: 5px;
+}
+
+
 .date-box{
     display:grid;
     grid-template-columns: 50% 50%;
@@ -114,10 +138,16 @@ input[type="date"]{
     height: 40px;
     border-radius: 5px;
     color: #fff;
+    border: none;
+    border: 1px solid #898989;
+    padding-left: 10px;
 }
 input[type="date"]::-webkit-calendar-picker-indicator {
     filter: invert(100%) sepia(50%) hue-rotate(120deg) saturate(300%);
-  }
+}
+
+
+
 
 .elimination-box{
     display:grid;
@@ -132,6 +162,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 40px;
     margin-top: 30px;
     border-radius: 4px;
+    border: none;
+    border: 1px solid #898989;
 }
 .gender-box {
    display:grid;
@@ -202,5 +234,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     float: right;
     margin-top: 60px;
     gap: 30px;    
+}
 
+input[type="text"],input[type="number"],textarea:focus{
+    color: #fff9ff;
+    
 }

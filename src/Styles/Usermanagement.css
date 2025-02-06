@@ -20,6 +20,7 @@
 .table tbody tr td {
   color: #FFFFFF !important;
   background: #050a17;
+  line-height: 23px;
 }
 .table tbody tr th {
   color: #fff !important;
@@ -43,4 +44,6 @@
 }
 .btn.dropdown-toggle.border {
   border: 1px solid #3856f3 !important;
+  margin-top: -9px;
+
 }
