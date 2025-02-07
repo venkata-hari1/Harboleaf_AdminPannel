@@ -47,3 +47,13 @@
   margin-top: -9px;
 
 }
+
+@media(max-width:830px){
+   .header-container,.total{
+     display: none !important;
+   }
+ 
+}
+
+
+
