@@ -130,6 +130,9 @@
 
 /* Responsive */
 @media (max-width: 830px) {
+    .main-header-Container{
+        display:none
+    }
     .header-container {
         height: auto;
         flex-direction: column;

@@ -3,7 +3,7 @@ import '../Styles/Verticalnavigation.css';
 import Harborleaf from '../assets/Harboleaf_logo.png';
 import { useNavigate } from 'react-router-dom';
 import Adiminpic from '../assets/Adminpic.jpg';
-const Verticalnavigation = () => {
+const Verticalnavigation = ({ closeNav }) => {
  
   const navigate=useNavigate()
   const menudata = [
@@ -17,6 +17,9 @@ const Verticalnavigation = () => {
 ];
 const handleClick=(menu)=>{
   navigate(`/admin/${menu.route}`)
+  if (window.innerWidth < 900) {
+    closeNav();
+  }
 }
   return (
     <div className="sidebar-container">

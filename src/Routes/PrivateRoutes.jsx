@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { Route, Routes} from 'react-router-dom'
 import Usermanagement from '../Components/Usermanagement'
 import Gstusermanagement from '../Components/Gstusermanagement'
@@ -14,13 +14,16 @@ import Header from '../Components/Header'
 import Admanagement from '../Components/Admanagement'
 import Userform from '../Components/Userform'
 import './PrivateRoutes.css'
+import MobileHeader from '../Components/MobileHeader'
 const PrivateRoutes = () => {
     return (
+        <Fragment>
+          <MobileHeader/>
         <div className='grid-container'>
             <div className='sidebar'>
                 <Verticalnavigation />
             </div>
-            <div style={{position:'relative'}}>
+            <div>
                 <Header/>
                 <div style={{padding:'10px'}}>
                 <Routes>
@@ -40,6 +43,7 @@ const PrivateRoutes = () => {
                 </div>
             </div>
         </div>
+        </Fragment>
     )
 
 }

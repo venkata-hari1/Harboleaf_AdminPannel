@@ -30,7 +30,7 @@ const Header = () => {
       name = "Dashboard";
   }
   return (
-    <div>
+    <div className='main-header-Container'>
      <div className={location.pathname==="/admin/emergency"?'header-container1':'header-container'}>
       <div className='header-items'>
        <div className='header-title'>

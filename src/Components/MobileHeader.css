@@ -1,0 +1,28 @@
+
+  
+  .custom-navbar .navbar-brand-small {
+    font-size: 14px; /* Reduce brand text size */
+    padding: 0 10px !important;
+    line-height: 40px !important;
+  }
+  .custom-navbar-toggler {
+    color: white !important;
+    border-color: white !important;
+  }
+  .custom-navbar .navbar-toggler {
+    padding: 5px;
+    font-size: 12px; /* Reduce toggle button size */
+  }
+  
+  .custom-navbar .nav-link {
+    font-size: 12px !important;
+    padding: 5px 10px !important;
+  }
+  
+  .custom-navbar .dropdown-menu {
+    font-size: 12px !important;
+  }
+  .navigation-conatainer{
+    margin-top: -2%;
+    width:100%
+  }

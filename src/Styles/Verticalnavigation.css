@@ -37,3 +37,12 @@ small{
     border-right:1px solid #323232;
     background:"linear-gradient(to bottom,'#111219','#323232')"
 }
+@media(max-width:830px){
+    .sidebar-container{
+       position: relative;
+       z-index: 2000;
+       width:100%;
+       border-right:none;
+       height:fit-content
+    }
+}
