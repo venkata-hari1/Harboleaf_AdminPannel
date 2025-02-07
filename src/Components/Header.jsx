@@ -31,7 +31,8 @@ const Header = () => {
   }
   return (
     <div>
-     <div className='header-container'>
+     <div className={location.pathname==="/admin/emergency"?'header-container1':'header-container'}>
+      <div className='header-items'>
        <div className='header-title'>
            <p>{name}</p> 
         </div>
@@ -45,6 +46,7 @@ const Header = () => {
         </div>
 
         </div>
+       </div> 
 
 
      </div>

@@ -53,7 +53,7 @@ return (
     </svg></button>
       <button className='btn' style={{color:"#FF0000",border:"1px solid #FF0000",fontFamily:"Roboto"}}> Suspended Accounts</button>
     </div>
-   
+    <div class="tab-content table-responsive">
    <table className="table table-borderless mt-4">
    <thead >
   <tr>
@@ -96,6 +96,7 @@ return (
   }
 </tbody>
   </table>
+  </div>
   <Pagination />
   </div>
   )
