@@ -34,12 +34,10 @@ const handleClick=(menu)=>{
           ))}
         </ul>
       </div>
-
       <div className="adminbutton d-flex align-items-center p-3 rounded shadow mt-5">
         <button className="btn p-0">
           <img src={Adiminpic} className="rounded-circle" width="40px" height="40px" alt="Admin" />
         </button>
-
         <div className="ms-3" style={{ background: "#29292C" }}>
           <h6 className="mb-0 fw-bold" style={{ color:"#FFFFFF", background:"#29292C",fontSize:"15px",fontFamily:"Roboto"  }}>Sourav Singh</h6>
           <small className="text-white" style={{ color: "#898989",background:"#29292C",fontFamily:"Roboto" }}>Admin</small>
