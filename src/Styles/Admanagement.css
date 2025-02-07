@@ -15,6 +15,7 @@
     
 }
 .advertisement button{
+    background:#050a17;
     border-radius: 1px ;
     border: 1px solid #3856F3;
     color: #fff;
@@ -28,6 +29,7 @@
     font-weight: 600;
 }
 .moniter-cmpg button{
+    background:#050a17;
     border-radius: 1px ;
     border: 1px solid #3856F3;
     color: #fff;
@@ -40,7 +42,7 @@
     font-weight: 600;
 }
 .billing-invoice button{
-    
+    background:#050a17;
     border-radius: 1px ;
     border: 1px solid #3856F3;
     color: #fff;
