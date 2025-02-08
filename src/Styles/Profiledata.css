@@ -41,10 +41,10 @@
 .download-report{
     display: flex;
 }
-.download-report-btn{
+.download-report-btns{
 color: #fff;
 border: 1px solid #3856F3;
-
+background-color: transparent;
 height: 40px;
 margin-top: 30px;
 padding: 7px;
