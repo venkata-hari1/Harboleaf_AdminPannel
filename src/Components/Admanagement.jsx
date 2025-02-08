@@ -11,10 +11,10 @@ const Admanagement = () => {
       <button onClick={()=>navigate('userform')}>Create New Advertisement</button> 
       </div>
       <div className='moniter-cmpg'>
-      <button onClick={()=>navigate('userform')}>Moniter Campaign</button> 
+      <button onClick={()=>navigate('/admin/moniter-compaign')}>Moniter Campaign</button> 
       </div>
       <div className='billing-invoice'>
-      <button onClick={()=>navigate('userform')}>Billing and Invoice Details</button> 
+      <button onClick={()=>navigate('/admin/billing-invoice')}>Billing and Invoice Details</button> 
       </div>
       </div>
 

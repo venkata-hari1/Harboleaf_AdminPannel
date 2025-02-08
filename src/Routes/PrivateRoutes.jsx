@@ -13,6 +13,8 @@ import Profileinformation from '../Components/Profileinformation'
 import Header from '../Components/Header'
 import Admanagement from '../Components/Admanagement'
 import Userform from '../Components/Userform'
+import Editprofile from '../Components/Editprofile'
+import Safetyreports from '../Components/Safetyreports'
 import './PrivateRoutes.css'
 import MobileHeader from '../Components/MobileHeader'
 const PrivateRoutes = () => {
@@ -32,13 +34,15 @@ const PrivateRoutes = () => {
                     <Route path='suspend-accounts' element={<Suspendaccounts />} />
                     <Route path='gst-users' element={<Gstusermanagement />} />
                     <Route path='gst-reports' element={<Gstreportsmanagement />} />
-                    <Route path='billing' element={<Billinginvoice />} />
                     <Route path='emergency' element={<Emergencymanagement />} />
                     <Route path='moniter-compaign' element={<Monitercompaign />} />
                     <Route path='vertical' element={<Verticalnavigation />} />
                     <Route path='user-management/profile-info/:id' element={<Profileinformation />} /> 
                     <Route path='admgmt' element={<Admanagement />} />
-                    <Route path='admgmt/userform' element={<Userform />} />         
+                    <Route path='safety-reports' element={<Safetyreports/>}/>
+                    <Route path='billing-invoice' element={<Billinginvoice/>}/>
+                    <Route path='admgmt/userform' element={<Userform />} />  
+                    <Route path='edit-profile' element={<Editprofile />}/>        
                 </Routes>
                 </div>
             </div>

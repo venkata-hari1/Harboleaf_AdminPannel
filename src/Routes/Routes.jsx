@@ -8,6 +8,7 @@ import Profiledata from '../Components/Profiledata'
 import Socialdata from '../Components/Socialdata'
 import Postdata from '../Components/Postdata'
 import Profileinformation from '../Components/Profileinformation'
+import Safetytable from '../Components/Safetytable'
 const AppRoutes = () => {
   return (
     <Routes> 
@@ -19,7 +20,7 @@ const AppRoutes = () => {
       <Route path='/social' element={<Socialdata />}/> 
       <Route path='/post' element={<Postdata />}/> 
       <Route path='/profile-info' element={<Profileinformation />} />
-  
+      <Route path='/safetable' element={< Safetytable/>} />
     </Routes>
     
   )

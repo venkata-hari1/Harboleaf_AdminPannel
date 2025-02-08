@@ -13,7 +13,7 @@ const Verticalnavigation = ({ closeNav }) => {
     { id: 4, menu: "GST User Management", icon: "bi-briefcase-fill", route: "gst-users", locationRoute: "/admin/gst-users" },
     { id: 5, menu: "GST User Reports", icon: "bi-briefcase-fill", route: "gst-reports", locationRoute: "/admin/gst-reports" },
     { id: 6, menu: "Emergency Management", icon: "bi-shield-fill-check", route: "emergency", locationRoute: "/admin/emergency", color: "#FF0000" },
-    { id: 7, menu: "AD Management", icon: "bi-badge-ad-fill", route: "moniter-compaign", locationRoute: "/admin/moniter-compaign" },
+    { id: 7, menu: "AD Management", icon: "bi-badge-ad-fill", route: "admgmt", locationRoute: "admin/admgmt" },
     { id: 8, menu: "Edit Profile", icon: "bi-person-circle", route: "edit-profile", locationRoute: "/admin/edit-profile" },
 ];
 const handleClick=(menu)=>{

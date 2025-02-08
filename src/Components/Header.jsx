@@ -3,6 +3,9 @@ import '../Styles/Header.css';
 import { useLocation } from 'react-router-dom'
 const Header = () => {
   const location = useLocation()
+  const handleHeaderBack = () => {
+    window.history.back();
+  };
   let name = "";
   switch (location.pathname) {
     case "/admin/user-management":
@@ -20,20 +23,29 @@ const Header = () => {
     case "/admin/emergency":
       name = "Emergency Management";
       break;
-    case "/admin/moniter-compaign":
+    case "/admin/admgmt/userform":
       name = "AD Management";
       break;
+    case "/admin/admgmt":
+        name = "AD Management";
+     break;
     case "/admin/edit-profile":
       name = "Edit Profile";
+      break;
+    case "/admin/billing-invoice":
+        name = "Billing and Invoice details";
+      break;
+    case "/admin/moniter-compaign":
+       name = "Monitor Campaign";
       break;
     default:
       name = "Dashboard";
   }
   return (
     <div className='main-header-Container'>
-     <div className={location.pathname==="/admin/emergency"?'header-container1':'header-container'}>
+     <div className={(location.pathname==="/admin/emergency" || location.pathname==="/admin/safety-reports")?'header-container1':'header-container'}>
       <div className='header-items'>
-       <div className='header-title'>
+       <div className='header-title' style={{cursor:'pointer'}} onClick={handleHeaderBack}>
            <p>{name}</p> 
         </div>
         <div className='search-notify'>
@@ -51,7 +63,9 @@ const Header = () => {
 
      </div>
 
-     {location.pathname!=="/admin/user-management/profile-info/1"&&<div className='total'>
+     {(location.pathname!=="/admin/user-management/profile-info/1" &&
+      location.pathname!=="/admin/edit-profile" && location.pathname!=="/admin/safety-reports"
+      ) &&<div className='total'>
       <p id="total1">Total Users</p>
       <p id="total2">40,300</p>
       <p id="total3"><i className="bi bi-arrow-up-right "  style={{ background:"#26666333",color: "#4AD991" }}></i><span style={{ background:"#26666333",color: "#4AD991" }}>4.8</span>from yesterday</p>

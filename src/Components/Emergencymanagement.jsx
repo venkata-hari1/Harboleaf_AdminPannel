@@ -1,8 +1,12 @@
 import React from 'react'
 import Pagination from './Pagination'
 import '../Styles/Emergencymanagement.css';
+import { useNavigate } from 'react-router-dom';
 const Emergencymanagement = () => {
-
+  const navigate=useNavigate()
+   const handleNavigate=()=>{
+      navigate(`/admin/safety-reports`)
+   }
     const tabledata=[
         {
           id:1,
@@ -62,7 +66,7 @@ const Emergencymanagement = () => {
      tabledata.map((tdata,index)=>(
       <tr key={tdata.id}>
       <th>{tdata.id}</th>
-      <td> <img
+      <td onClick={handleNavigate}> <img
             src={`https://robohash.org/${tdata.utiliseduser}?size=40x40`}
             alt="avatar"
             className="rounded-circle me-2"
