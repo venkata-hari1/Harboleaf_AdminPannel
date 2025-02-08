@@ -45,8 +45,8 @@ const Billinginvoice = () => {
 </svg></button>
       
     </div>
-   
-   <table className="table table-borderless mt-4">
+    <div class="tab-content table-responsive">
+<table className="table table-borderless mt-4">
    <thead >
   <tr >
     <th>Advertisment No</th>
@@ -78,7 +78,7 @@ const Billinginvoice = () => {
   }
 </tbody>
   </table>
-
+</div>
   <Pagination />
      
   </div>

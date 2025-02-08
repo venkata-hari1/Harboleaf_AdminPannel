@@ -4,3 +4,11 @@ body{
    background:#050a17 !important;
      /* background: linear-gradient(to bottom,#081844, #000000); */
 }
+@media(max-width:830px){
+tr th{
+ white-space:nowrap;
+}
+tbody, td, tfoot, th, thead, tr {
+  white-space:nowrap;
+}
+}
