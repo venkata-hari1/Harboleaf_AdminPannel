@@ -42,7 +42,7 @@ const handleClick=(menu)=>{
         <button className="btn p-0">
           <img src={Adiminpic} className="rounded-circle" width="40px" height="40px" alt="Admin" />
         </button>
-        <div className="ms-3" style={{ background: "#29292C" }}>
+        <div className="ms-3" style={{ background: "#29292C" }} onClick={()=>navigate('/')}>
           <span className="mb-0 fw-bold" style={{ color:"#FFFFFF", background:"#29292C",fontSize:"15px",fontFamily:"Roboto",whiteSpace:'no-wrap'}}>Sourav...</span><br/>
           <small className="text-white" style={{ color: "#898989",background:"#29292C",fontFamily:"Roboto" }}>Admin</small>
         </div>

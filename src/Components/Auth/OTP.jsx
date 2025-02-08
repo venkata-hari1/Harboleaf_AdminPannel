@@ -94,7 +94,7 @@ function ForgotPassword() {
               </div>
 
               <div className="text-center mt-3">
-                <button type="submit" className={!isFormComplete()?"btn btn-secondary":"btn btn-primary"} disabled={!isFormComplete()} onClick={handleSubmit}>Submit</button>
+                <button id ="fogot-pwd" type="submit" className={!isFormComplete()?"btn btn-secondary":"btn btn-primary"} disabled={!isFormComplete()} onClick={handleSubmit}>Submit</button>
               </div>
 
             </form>

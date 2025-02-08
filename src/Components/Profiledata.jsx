@@ -35,7 +35,7 @@ return (
      </div>
      
      <div className="download-report"> 
-     <button className='download-report-btn' >Download Report<i className="bi bi-download ms-2"></i></button>
+     <button className='download-report-btns' >Download Report<i className="bi bi-download ms-2"></i></button>
      </div>
      </div>
 
