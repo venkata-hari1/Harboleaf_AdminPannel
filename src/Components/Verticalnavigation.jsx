@@ -9,11 +9,11 @@ const Verticalnavigation = ({ closeNav }) => {
   const menudata = [
     { id: 1, menu: "Admin Pannel", icon: "bi-people-fill", route: "admin-pannel", locationRoute: "/admin/admin-pannel" },
     { id: 2, menu: "User Management", icon: "bi-people-fill", route: "user-management", locationRoute: "/admin/user-management" },
-    { id: 3, menu: "User Management Reports", icon: "bi-people-fill", route: "user-reports", locationRoute: "/admin/user-reports" },
+    { id: 3, menu: "User Management Reports", icon: "bi-file-earmark-fill", route: "user-reports", locationRoute: "/admin/user-reports" },
     { id: 4, menu: "GST User Management", icon: "bi-briefcase-fill", route: "gst-users", locationRoute: "/admin/gst-users" },
-    { id: 5, menu: "GST User Reports", icon: "bi-briefcase-fill", route: "gst-reports", locationRoute: "/admin/gst-reports" },
+    { id: 5, menu: "GST User Reports", icon: "bi-cash-stack", route: "gst-reports", locationRoute: "/admin/gst-reports" },
     { id: 6, menu: "Emergency Management", icon: "bi-shield-fill-check", route: "emergency", locationRoute: "/admin/emergency", color: "#FF0000" },
-    { id: 7, menu: "AD Management", icon: "bi-badge-ad-fill", route: "admgmt", locationRoute: "admin/admgmt" },
+    { id: 7, menu: "AD Management", icon: "bi-badge-ad-fill", route: "moniter-compaign", locationRoute: "/admin/moniter-compaign" },
     { id: 8, menu: "Edit Profile", icon: "bi-person-circle", route: "edit-profile", locationRoute: "/admin/edit-profile" },
 ];
 const handleClick=(menu)=>{
@@ -38,7 +38,7 @@ const handleClick=(menu)=>{
           ))}
         </ul>
       </div>
-      <div className="adminbutton d-flex align-items-center p-3 rounded shadow mt-2">
+      <div className="adminbutton d-flex align-items-center p-3 rounded shadow mt-2 bottom-container" >
         <button className="btn p-0">
           <img src={Adiminpic} className="rounded-circle" width="40px" height="40px" alt="Admin" />
         </button>
