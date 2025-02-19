@@ -40,26 +40,34 @@ function ForgotPassword() {
   navigate('/reset-password')
   }
   return (
+    <div className="parent-container">  
+<div className="logo-box">
+           <Logo />
+          </div>
+          <div className="title-box">
+            <p>ADMIN PANEL</p>
+          </div> 
+      
+    <div className="container-fluid1 ">
 
-    <div className="container-fluid " style={{height:'100vh',overflowY:'hidden'}}>
-      <Logo />
-      <div className="row text-center text-white mt-5">
-        <h3>ADMIN PANEL</h3>
-      </div>
 
-      <div className="row justify-content-center">
-        <div className="col-md-6 d-flex justify-content-center">
+      <div className="form-container-box">
+        <div>
           <div>
-            <h4 className="text-center mt-5">Forgot Password</h4>
+            <div className='title-para'>
+            <h4 className="forget-title">Forgot Password</h4>
 
-            <p className="text-center text-white mt-3">We've sent an activation code to<br /> your email Sourav@gmail.com</p>
+              <p className="text-center text-white mt-3">We've sent an activation code to<br /> your email Sourav@gmail.com</p>
 
+
+            </div>
+            
             <form>
               <div className="d-flex justify-content-center align-items-center">
                 <OtpInput
                   value={otp}
                   onChange={setOtp}
-                  numInputs={4}
+                  numInputs={5}
                   renderSeparator={<span>-</span>}
                   renderInput={(props) => (
                     <input
@@ -70,8 +78,8 @@ function ForgotPassword() {
                         color:'white',
                         fontSize: '20px',
                         textAlign: 'center',
-                        border: '1px solid #ccc',
-                        borderRadius: '5px',
+                        border: '3px solid #ccc',
+                        borderRadius: '50px',
                         margin: '0 5px',
                       }}
                     />
@@ -105,6 +113,7 @@ function ForgotPassword() {
 
       </div>
 
+    </div>
     </div>
 
   )

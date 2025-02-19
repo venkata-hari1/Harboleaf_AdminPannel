@@ -38,6 +38,9 @@ const Header = () => {
     case "/admin/moniter-compaign":
        name = "Monitor Campaign";
       break;
+      case "/admin/admin-pannel":
+        name = "Admin Pannel";
+      break;
     default:
       name = "Dashboard";
   }
@@ -64,7 +67,8 @@ const Header = () => {
      </div>
 
      {(location.pathname!=="/admin/user-management/profile-info/1" &&
-      location.pathname!=="/admin/edit-profile" && location.pathname!=="/admin/safety-reports"
+      location.pathname!=="/admin/edit-profile" && location.pathname!=="/admin/safety-reports" &&
+      location.pathname!=="/admin/admin-pannel"
       ) &&<div className='total'>
       <p id="total1">Total Users</p>
       <p id="total2">40,300</p>

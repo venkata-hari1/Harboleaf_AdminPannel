@@ -15,6 +15,7 @@ import Admanagement from '../Components/Admanagement'
 import Userform from '../Components/Userform'
 import Editprofile from '../Components/Editprofile'
 import Safetyreports from '../Components/Safetyreports'
+import AdminPannel from '../Components/AdminPannel/AdminDashboard'
 import './PrivateRoutes.css'
 import MobileHeader from '../Components/MobileHeader'
 const PrivateRoutes = () => {
@@ -29,6 +30,7 @@ const PrivateRoutes = () => {
                 <Header/>
                 <div style={{padding:'10px'}}>
                 <Routes>
+                <Route path='admin-pannel' element={<AdminPannel />} />
                     <Route path='user-management' element={<Usermanagement />} />
                     <Route path='user-reports' element={<Userreports />} />
                     <Route path='suspend-accounts' element={<Suspendaccounts />} />

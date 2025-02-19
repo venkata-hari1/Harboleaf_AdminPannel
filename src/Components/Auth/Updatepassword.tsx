@@ -1,29 +1,35 @@
-import React from "react"
+import React, { Fragment } from "react"
 import Logo from "./Logo"
 import './Styles/Updatepassword.css';
 import { useNavigate } from "react-router-dom";
 function Updatepassword(){
 const navigate=useNavigate()
 const handleUpdate=()=>{
-  e.preventDefault()
   navigate('/')
 }
-const handleBack=(e)=>{
-  e.preventDefault()
-  navigate('/')
+interface HandleBackEvent extends React.MouseEvent<HTMLDivElement> {
+  preventDefault: () => void;
 }
-    return(
 
-        <div className="container-fluid " style={{height:'100vh',overflowY:'hidden'}}>
-        <Logo />
-        <div className="row text-center text-white mt-5">
-        <h3>ADMIN PANEL</h3>
-        </div>
-       
+const handleBack = (e: HandleBackEvent) => {
+  e.preventDefault();
+  navigate('/');
+};
+    return(
+<Fragment>
+<div className="parent-container">  
+<div className="logo-box">
+           <Logo />
+          </div>
+          <div className="title-box">
+            <p>ADMIN PANEL</p>
+          </div> 
+        <div className="container-fluid1 ">
+      
     <div className="row justify-content-center">
     <div className="col-md-6 d-flex justify-content-center">
       <div>
-        <h4 className="text-center mt-4">Reset Password</h4>
+        <h4 className="text-center mt-4" style={{color:'#85B2E2'}}>Reset Password</h4>
         <form>
           
           <div className="mt-5 mb-3">
@@ -44,6 +50,8 @@ const handleBack=(e)=>{
         
       
        </div>
+</div>
+ </Fragment>      
 
     )
 
