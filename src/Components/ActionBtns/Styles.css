@@ -1,0 +1,21 @@
+.action_btns_container{
+    display: flex;
+    flex-direction: column;
+   align-items: start;
+    width:fit-content;
+    text-align: start;
+    position: absolute;
+    z-index: 1000;
+    background-color: #ebe8e8;
+    border: none;
+    padding: 9px;
+}
+
+.action_btns_container .gst-retrive-child{
+    border: none;
+    white-space: nowrap;
+    padding: 3px;
+    margin-right: 3px;
+    width: fit-content;
+    color:black !important;
+}

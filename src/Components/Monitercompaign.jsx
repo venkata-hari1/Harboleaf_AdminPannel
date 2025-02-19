@@ -1,7 +1,12 @@
 import React from 'react'
 import Pagination from './Pagination'
 import { useNavigate } from 'react-router-dom'
+import Actions from './ActionBtns/Actions';
 const Monitercompaign =() =>{
+    const[id,setId]=React.useState(null)
+         const handleOpen=(id)=>{
+           setId((prev)=>(prev===id?null:id))
+         }
   const navigate=useNavigate()
   const handleAdd=()=>{
     navigate('/admin/admgmt')
@@ -80,9 +85,11 @@ const Monitercompaign =() =>{
       <td>{tdata.impressions}</td>
       <td>{tdata.engagementrate}</td>
       <td>{tdata.budget}</td>    
-      <td><button className="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <td><button onClick={()=>handleOpen(tdata.id)} className="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Actions
-    </button></td>
+    </button>
+       {id===tdata.id&&<Actions/>}
+    </td>
   </tr>
 
 

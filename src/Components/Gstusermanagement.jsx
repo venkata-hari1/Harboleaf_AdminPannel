@@ -1,46 +1,8 @@
 import React from 'react'
 import '../Styles/Gstusermanagement.css'
 import Pagination from './Pagination'
+import {GSTtable} from './JSON_Data/JSON'
 const Gstusermanagement = () => {
-
-    const tabledata=[
-      {
-        id:1,
-        username:'Navogithkour',
-        gstusername: '22AAAAA0000A1Z5',
-        ssdate: '01/01/2016',
-        sedate:'01/01/2017',
-        state:'Telangana',
-    },
-    
-        {
-          id:2,
-          username:'Mark',
-          gstusername: '22ZZZZ0000A1Z5',
-          ssdate: '01/01/2013',
-          sedate:'01/01/2017',
-          state:'Maharastra',
-      },
-      {
-        id:3,
-        username:'John peter',
-        gstusername: '33AAAAA0000A1Z6',
-        ssdate: '01/01/2018',
-        sedate:'01/01/2021',
-        state:'Tamilnadu',
-    },
-    {
-      id:4,
-      username:'Andrews mathu',
-      gstusername: '22CCCC0000A1Z5',
-      ssdate: '01/01/2018',
-      sedate:'01/01/2022',
-      state:'Karnakata',
-    },
- 
-]
-
-
   return (
     <div className='container'>
       
@@ -64,7 +26,7 @@ const Gstusermanagement = () => {
 </thead><br/>
 <tbody >
 {
-     tabledata.map((tdata,index)=>(
+     GSTtable.map((tdata,index)=>(
       <tr key={tdata.id}>
       <th>{tdata.id}</th>
       <td>{tdata.username}</td>

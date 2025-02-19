@@ -1,51 +1,13 @@
 import React from 'react'
 import Pagination from './Pagination'
+import {GSTReports} from './JSON_Data/JSON'
+import Actions from './ActionBtns/Actions';
 const Gstreportsmanagement = () => {
-  
-    const tabledata=[
-        {
-          id:1,
-          username:'Navogithkour',
-          gstusername: '22AAAAA0000A1Z5',
-          reason:"Fake",
-          state:'Telangana',
-          date:"01/12/2012",
-          userreported:'10',
-          reasonview:'Vibe'
-      },
-      {
-        id:2,
-        username:'Nandan Raviokur',
-        gstusername: '33AAAAA0000A1Z5',
-        reason:"Fake",
-        state:'Maharastra',
-        date:"04/12/2014",
-        userreported:'20',
-        reasonview:'Vibe'
-    },
-    {
-        id:3,
-        username:'Vyas devan',
-        gstusername: '44AAAAA0000A1Z6',
-        reason:"Fake",
-        state:'Karnakataka',
-        date:"06/11/2023",
-        userreported:'10',
-        reasonview:'post'
-    }, 
-    {
-        id:4,
-        username:'Ms subramanyan',
-        gstusername: '44AAAAA0000A1Z5',
-        reason:"Spam",
-        state:'Andhrapradesh',
-        date:"04/12/2013",
-        userreported:'15',
-        reasonview:'Vibe'
-    },   
-   
-  ]
-  
+    const[id,setId]=React.useState(null)
+    const handleOpen=(id)=>{
+      setId((prev)=>(prev===id?null:id))
+    }
+
   return (
     <div className='container'>
       
@@ -73,7 +35,7 @@ const Gstreportsmanagement = () => {
 </thead><br/>
 <tbody >
 {
-     tabledata.map((tdata,index)=>(
+     GSTReports.map((tdata,index)=>(
       <tr key={tdata.id}>
       <th>{tdata.id}</th>
       <td> 
@@ -89,9 +51,11 @@ const Gstreportsmanagement = () => {
       <td>{tdata.gstusername}</td> 
       <td>{tdata.reason}</td>
       <td>{tdata.state}</td>
-      <td><button className="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <td><button onClick={()=>handleOpen(tdata.id)} className="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Actions
-    </button></td>
+    </button>
+       {id===tdata.id&&<Actions/>}
+    </td>
       <td>{tdata.date}</td>
       <td>{tdata.userreported}</td>
       <td>{tdata.reasonview}</td>

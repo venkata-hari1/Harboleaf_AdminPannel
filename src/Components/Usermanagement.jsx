@@ -3,49 +3,21 @@ import "../Styles/Usermanagement.css";
 import  Pagination  from './Pagination';
 import '../Styles/Pagination.css';
 import { useNavigate } from 'react-router-dom';
+import Actions from './ActionBtns/Actions';
+import { tabledata } from './JSON_Data/JSON';
 
 const Usermanagement = () => {
+const[id,setId]=React.useState(null)
 const navigate=useNavigate()
 const userInfo=(id)=>{
   navigate(`profile-info/${id}`)
 }
-  const tabledata=[
-    {
-      id:1,
-      username:'Navogithkour',
-      accountstatus: 'active',
-      contact: "+91-9939393939",
-      date:"20/02/2001",
-      state:"Telangana",
-   },
-   {
-     id:2,
-     username:'Mark',
-     accountstatus: 'inactive',
-     contact: "+91-9909393939",
-     date:"20/02/2001",
-      state:"Telangana",
-    },
-   {
-   id:3,
-   username:'Johnphelm',
-   accountstatus: 'inactive',
-   contact: "+91-9939393929",
-    date:"20/02/2001",
-    state:"Telangana",
-  },
- {
- id:4,
- username:'Neroha sahol',
- accountstatus: 'active',
- contact: "+91-9939393940",
- date:"20/02/2001",
- state:"Telangana",
+const handleOpen=(id)=>{
+  setId((prev)=>(prev===id?null:id))
 }
-]
 
 return (
-    <div className='container'style={{height:"90vh"}}>
+    <div className='container' style={{height:"90vh"}}>
       
     <div  style={{display:"flex",justifyContent:"end"}}>
       <button className='btn btn-primary me-3' style={{backgroundColor:"#3856F3",fontFamily:"Roboto"}}>Filter <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-funnel-fill ms-1" viewBox="0 0 16 16">
@@ -53,8 +25,8 @@ return (
     </svg></button>
       <button className='btn' style={{color:"#FF0000",border:"1px solid #FF0000",fontFamily:"Roboto"}}> Suspended Accounts</button>
     </div>
-    <div class="tab-content table-responsive">
-   <table className="table table-borderless mt-4">
+    <div className="tab-content table-responsive">
+   <table className="table table-borderless mt-5 ">
    <thead >
   <tr>
     <th>S.No</th>
@@ -68,7 +40,7 @@ return (
 </thead><br/>
 <tbody >
   {
-     tabledata.map((tdata,index)=>(
+     tabledata.map((tdata)=>(
       <tr key={tdata.id}>
       <th>{tdata.id}</th>
       <td onClick={()=>userInfo(tdata.id)}>
@@ -86,9 +58,12 @@ return (
       <td>{tdata.contact}</td>
       <td>{tdata.date}</td>
       <td>{tdata.state}</td>    
-      <td><button className="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      <td className='action-btns' onClick={()=>handleOpen(tdata.id)}>
+        <button className="btn dropdown-toggle border" type="button" data-bs-toggle="dropdown" aria-expanded="false">
       Actions
-    </button></td>
+    </button>
+    {id===tdata.id&&<Actions/>}
+    </td>
   </tr>
 
 
